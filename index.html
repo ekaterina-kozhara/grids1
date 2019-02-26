@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <style media="screen">
+      :root {
+        --block-height: 765px;
+      }
+
+      html, bode {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: lightblue;
+      }
+      .gridContainer {
+        display: grid;
+        grid-template-columns: repeat(14, 1fr);
+        grid-column-gap: 12px;
+
+        width: 100vw - 80px;
+        margin: 0 auto;
+
+        height: var(--block-height);
+        background: lightgreen;
+      }
+      @media (max-width 1280px) {
+        :root {
+          --block-height: 680px;
+        }
+        .gridContainer
+        grid-column-gap: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="gridContainer">
+      <div id="image1">
+        
+      </div>
+    </section>
+  </body>
+</html>
